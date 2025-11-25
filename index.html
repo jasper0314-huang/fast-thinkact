@@ -258,7 +258,7 @@
         <img src="static/images/exp_simpler_libero.png" alt="Fast-ThinkAct-Simpler-Libero" class="center-image" style="width: 100%; height: auto; margin-top: 5px;" />
       </div>
 
-      <h3 class="title is-4" style="margin-top: 20px;">RoboTwin2.0</h3>
+      <h3 class="title is-4" style="margin-top: 30px;">RoboTwin2.0</h3>
       <div style="max-width: 60%; margin: 0 auto; text-align: justify; margin-top: -10px;">
         <p class="has-text-centered has-text-justified" style="margin-bottom: 3px;">
           Quantitative comparisons of bimanual manipulation tasks on RoboTwin2.0. Background colors indicate task length based on expert demonstrations: <span style="background-color: rgb(205, 255, 203);">short (80-100)</span> , <span style="background-color: rgb(255, 250, 216);">medium (110-220)</span> , <span style="background-color: rgb(255, 204, 204);">long (270-470)</span> steps.
@@ -266,20 +266,12 @@
         <img src="static/images/exp_robotwin2.png" alt="Fast-ThinkAct-RoboTwin2.0" class="center-image" style="width: 100%; height: auto; margin-top: 5px;" />
       </div>
 
-      <h3 class="title is-4" style="margin-top: 20px;">Embodied Reasoning Benchmarks</h3>
+      <h3 class="title is-4" style="margin-top: 30px;">Embodied Reasoning Benchmarks</h3>
       <div style="max-width: 60%; margin: 0 auto; text-align: justify; margin-top: -10px;">
         <p class="has-text-centered" style="margin-bottom: 3px;">
           Quantitative comparisons of embodied reasoning tasks on EgoPlan-Bench2, RoboVQA, and OpenEQA.
         </p>
         <img src="static/images/exp_er.png" alt="Fast-ThinkAct-ER" class="center-image" style="max-width: 100%; height: auto; margin-top: 5px;" />
-      </div>
-
-      <h3 class="title is-4" style="margin-top: 20px;">Few-shot Adaptation</h3>
-      <div style="max-width: 60%; margin: 0 auto; text-align: justify; margin-top: -10px;">
-        <p class="has-text-centered">
-          Few-shot adaptation results on RoboTwin2.0. We use 10 demonstrations per task for fine-tuning.
-        </p>
-        <img src="static/images/few_shot.png" alt="Fast-ThinkAct-Few-shot" class="center-image" style="max-width: 65%; height: auto; margin-top: 5px; display: block; margin-left: auto; margin-right: auto;" />
       </div>
     </div>
   </div>
@@ -299,17 +291,17 @@
         </div>
         <div id="manipulation-carousel" class="carousel results-carousel" style="margin-bottom: 20px;">
           <div class="item item-manipulation_1">
-            <video poster="" id="manipulation_1" autoplay controls muted loop playsinline width="60%" style="margin-bottom: 20px;">
+            <video poster="" id="manipulation_1" autoplay controls muted loop playsinline width="55%" style="margin-bottom: 20px;">
               <source src="static/videos/manipulation_1.mp4" type="video/mp4">
             </video>
           </div>
           <div class="item item-manipulation_2">
-            <video poster="" id="manipulation_2" autoplay controls muted loop playsinline width="60%" style="margin-bottom: 20px;">
+            <video poster="" id="manipulation_2" autoplay controls muted loop playsinline width="55%" style="margin-bottom: 20px;">
               <source src="static/videos/manipulation_2.mp4" type="video/mp4">
             </video>
           </div>
           <div class="item item-manipulation_3">
-            <video poster="" id="manipulation_3" autoplay controls muted loop playsinline width="60%" style="margin-bottom: 20px;">
+            <video poster="" id="manipulation_3" autoplay controls muted loop playsinline width="55%" style="margin-bottom: 20px;">
               <source src="static/videos/manipulation_3.mp4" type="video/mp4">
             </video>
           </div>
@@ -469,7 +461,7 @@
               <div class="column is-5 has-text-justified">
                 <div class="box content" style="margin-bottom: 15px;">
                   <p><strong>Textual reasoning (from teacher model)</strong></p>
-                  <p>Let's carefully analyze the image to determine if this room is on the ground floor of the building.
+                  <p style="font-size: 0.85rem;">Let's carefully analyze the image to determine if this room is on the ground floor of the building.
 
                     First, I notice that there is a window with a view of greenery outside. <span style="color: red;">This suggests we are at a level that allows natural light to filter in, which is typical for ground floor windows.</span>
                     
@@ -482,13 +474,30 @@
                 </div>
                 <div class="box content">
                   <p><strong>Verbalized reasoning</strong></p>
-                  <p>Let's break this down. ... (ignore 40 words) ... I should also consider if there's any sign of elevation. Hmm, it seems like the <span style="color: #76b900;">view outside the window</span> shows that the room is <span style="color: #76b900;">positioned above the ground</span>. Oh, I see, the perspective through the window suggests <span style="color: #76b900;">it's not on the ground floor</span>. Let's confirm that. Yes, it checks out.</p>
+                  <p style="font-size: 0.85rem;">Let's break this down. ... (ignore 40 words) ... I should also consider if there's any sign of elevation. Hmm, it seems like the <span style="color: #76b900;">view outside the window</span> shows that the room is <span style="color: #76b900;">positioned above the ground</span>. Oh, I see, the perspective through the window suggests <span style="color: #76b900;">it's not on the ground floor</span>. Let's confirm that. Yes, it checks out.</p>
                 </div>
               </div>
             </div>
 
           </div>
         </div>
+
+        <h3 class="title is-4" style="margin-top: 20px;">Failure Recovery</h3>
+        <div style="max-width: 60%; margin: 0 auto; text-align: justify; margin-top: 0px;">
+          <p class="has-text-centered has-text-justified">
+            (Left) Qualitative examples of corrective guidance for manipulation errors (simulation and real robot). (Right) Quantitative evaluation on RoboFAC-Sim and RoboFAC-Real benchmarks.
+          </p>
+          <img src="static/images/robofac.png" alt="Failure Recovery" class="center-image" style="max-width: 100%; height: auto; margin-top: 5px; margin-bottom: 30px; display: block; margin-left: auto; margin-right: auto;" />
+        </div>
+
+        <h3 class="title is-4" style="margin-top: 20px;">Few-shot Adaptation</h3>
+        <div style="max-width: 60%; margin: 0 auto; text-align: justify; margin-top: -10px;">
+          <p class="has-text-centered">
+            Few-shot adaptation results on RoboTwin2.0. We use 10 demonstrations per task for fine-tuning.
+          </p>
+          <img src="static/images/few_shot.png" alt="Fast-ThinkAct-Few-shot" class="center-image" style="max-width: 65%; height: auto; margin-top: 5px; display: block; margin-left: auto; margin-right: auto;" />
+        </div>
+
   </div>
 </section>
 
