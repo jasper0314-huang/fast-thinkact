@@ -86,12 +86,12 @@
               <!-- Paper authors -->
               <span class="author-block" style="margin-right: 15px;">
                 <a href="https://jasper0314-huang.github.io/" target="_blank">Chi-Pin Huang</a>
-                <sup>1,2†</sup>
+                <sup>1,2</sup>
               </span>
 
               <span class="author-block" style="margin-right: 15px;">
                 <a href="https://yunzeman.github.io/" target="_blank">Yunze Man</a>
-                <sup>1</sup>
+                <sup>1,3</sup>
               </span>
 
               <span class="author-block" style="margin-right: 15px;">
@@ -126,23 +126,22 @@
             <div class="is-size-5 publication-authors">
               <span class="author-block">
                 <sup>1</sup>
-                NVIDIA&nbsp;&nbsp;&nbsp;&nbsp;
+                NVIDIA&nbsp;&nbsp;
                 <sup>2</sup>
-                National Taiwan University
+                National Taiwan University&nbsp;&nbsp;
+                <sup>3</sup>
+                University of Illinois Urbana-Champaign
                 <br>
-                <span class="eql-cntrb">
+                <!-- <span class="eql-cntrb">
                   <sup>†</sup>Work done during internship
                   <br>
-                </span>
+                </span> -->
                 <!-- <br> -->
                 <div class="columns is-centered" style="margin-top: 0.0rem; display: flex; align-items: center;">
                   <div class="column is-narrow">
                     <img src="static/images/nvidia_logo.png" alt="NVIDIA" style="height: 45px;">
                   </div>
                   <div style="width: 1.3rem;"></div>
-                  <div class="column is-narrow">
-                    <img src="static/images/ntu_logo1.png" alt="NTU" style="height: 50px;">
-                  </div>
                 </div>
                 <!-- <br> -->
                 <!-- <sup style="color: rgba(171, 20, 20, 0.874); font-size: 1.8rem; font-weight: bold;">CVPR 2025</sup> -->
@@ -292,29 +291,29 @@
     <div class="container">
       <h2 class="title is-3 has-text-centered">Visualization</h2>
 
-        <!-- <h3 class="title is-4">Diverse Scene and Long-horizon Robot Manipulation Tasks</h3>
+        <h3 class="title is-4">Diverse Scene and Long-horizon Robot Manipulation Tasks</h3>
         <div style="max-width: 60%; margin: 0 auto; text-align: justify; margin-top: -10px;">
-          <p class="has-text-centered has-text-justified">
-            Qualitative results of intermediate reasoning steps and visualized trajectory for robot manipulation tasks on SimplerEnv and LIBERO benchmarks.
+          <p class="has-text-centered">
+            Qualitative results of visualized trace and task execution results.
           </p>
         </div>
         <div id="manipulation-carousel" class="carousel results-carousel" style="margin-bottom: 20px;">
           <div class="item item-manipulation_1">
-            <video poster="" id="manipulation_1" autoplay controls muted loop playsinline width="75%" style="margin-bottom: 20px;">
+            <video poster="" id="manipulation_1" autoplay controls muted loop playsinline width="60%" style="margin-bottom: 20px;">
               <source src="static/videos/manipulation_1.mp4" type="video/mp4">
             </video>
           </div>
           <div class="item item-manipulation_2">
-            <video poster="" id="manipulation_2" autoplay controls muted loop playsinline width="75%" style="margin-bottom: 20px;">
+            <video poster="" id="manipulation_2" autoplay controls muted loop playsinline width="60%" style="margin-bottom: 20px;">
               <source src="static/videos/manipulation_2.mp4" type="video/mp4">
             </video>
           </div>
           <div class="item item-manipulation_3">
-            <video poster="" id="manipulation_3" autoplay controls muted loop playsinline width="75%" style="margin-bottom: 20px;">
+            <video poster="" id="manipulation_3" autoplay controls muted loop playsinline width="60%" style="margin-bottom: 20px;">
               <source src="static/videos/manipulation_3.mp4" type="video/mp4">
             </video>
           </div>
-        </div> -->
+        </div>
 
         <!-- <h3 class="title is-4" style="margin-top: 40px;">Reflection & Self-correction</h3>
         <div style="max-width: 60%; margin: 0 auto; text-align: justify; margin-top: -10px;">
@@ -346,67 +345,72 @@
             Qualitative comparisons of robot execution results between RDT (base action model), and Fast-ThinkAct.
           </p>
         </div>
-        <div class="columns is-centered" style="margin-top: 15px;">
-          <div class="column is-one-third has-text-centered">
-            <video autoplay controls muted loop playsinline width="100%">
-              <source src="static/videos/comparison_1.mp4" type="video/mp4">
-            </video>
-            <text>“Pick up the black bowl on the stove and place it on the plate”</text>
+        <div id="comparison-carousel" class="carousel results-carousel" style="margin-top: 0px;">
+          <!-- Page 1: Videos 1-4 (2x2) -->
+          <div class="item">
+            <div class="columns is-centered">
+              <div class="column is-one-third has-text-centered">
+                <video autoplay controls muted loop playsinline width="100%">
+                  <source src="static/videos/comparison_1.mp4" type="video/mp4">
+                </video>
+                <p style="margin-top: 8px; font-size: 14px;">"Pick up the black bowl on the stove and place it on the plate"</p>
+              </div>
+              <div style="width: 2.5rem;"></div>
+              <div class="column is-one-third has-text-centered">
+                <video autoplay controls muted loop playsinline width="100%">
+                  <source src="static/videos/comparison_2.mp4" type="video/mp4">
+                </video>
+                <p style="margin-top: 8px; font-size: 14px;">"Pick up the alphabet soup and place it in the basket"</p>
+              </div>
+            </div>
+            <div class="columns is-centered" style="margin-top: -10px;">
+              <div class="column is-one-third has-text-centered">
+                <video autoplay controls muted loop playsinline width="100%">
+                  <source src="static/videos/comparison_5.mp4" type="video/mp4">
+                </video>
+                <p style="margin-top: 8px; font-size: 14px;">"Place red block in the middle, then stack green block on it"</p>
+              </div>
+              <div style="width: 2.5rem;"></div>
+              <div class="column is-one-third has-text-centered">
+                <video autoplay controls muted loop playsinline width="100%">
+                  <source src="static/videos/comparison_6.mp4" type="video/mp4">
+                </video>
+                <p style="margin-top: 8px; font-size: 14px;">"Start stacking the small smooth brown-rimmed bowl from the bottom to the top"</p>
+              </div>
+            </div>
           </div>
-          <div style="width: 2.5rem;"></div>
-          <div class="column is-one-third has-text-centered">
-            <video autoplay controls muted loop playsinline width="100%">
-              <source src="static/videos/comparison_2.mp4" type="video/mp4">
-            </video>
-            <text>“Pick up the alphabet soup and place it in the basket”</text>
-          </div>
-        </div>
-      
-        <div class="columns is-centered" style="margin-top: -15px;">
-          <div class="column is-one-third has-text-centered">
-            <video autoplay controls muted loop playsinline width="100%">
-              <source src="static/videos/comparison_3.mp4" type="video/mp4">
-            </video>
-            <text>“Put the bowl on the plate”</text>
-          </div>
-          <div style="width: 2.5rem;"></div>
-          <div class="column is-one-third has-text-centered">
-            <video autoplay controls muted loop playsinline width="100%">
-              <source src="static/videos/comparison_4.mp4" type="video/mp4">
-            </video>
-            <text>“Put the white mug on the left plate and put the yellow and white mug on the right plate”</text>
-          </div>
-        </div>
-
-        <div class="columns is-centered" style="margin-top: -15px;">
-          <div class="column is-one-third has-text-centered">
-            <video autoplay controls muted loop playsinline width="100%">
-              <source src="static/videos/comparison_5.mp4" type="video/mp4">
-            </video>
-            <text>“Place red block in the middle, then stack green block on it”</text>
-          </div>
-          <div style="width: 2.5rem;"></div>
-          <div class="column is-one-third has-text-centered">
-            <video autoplay controls muted loop playsinline width="100%">
-              <source src="static/videos/comparison_6.mp4" type="video/mp4">
-            </video>
-            <text>“Start stacking the small smooth brown-rimmed bowl from the bottom to the top”</text>
-          </div>
-        </div>
-
-        <div class="columns is-centered" style="margin-top: -15px;">
-          <div class="column is-one-third has-text-centered">
-            <video autoplay controls muted loop playsinline width="100%">
-              <source src="static/videos/comparison_7.mp4" type="video/mp4">
-            </video>
-            <text>“Use the left arm to press the smooth metal bell's top center”</text>
-          </div>
-          <div style="width: 2.5rem;"></div>
-          <div class="column is-one-third has-text-centered">
-            <video autoplay controls muted loop playsinline width="100%">
-              <source src="static/videos/comparison_8.mp4" type="video/mp4">
-            </video>
-            <text>“Take hold of the microphone with cylindrical handle and hand it over”</text>
+          <!-- Page 2: Videos 5-8 (2x2) -->
+          <div class="item">
+            <div class="columns is-centered">
+              <div class="column is-one-third has-text-centered">
+                <video autoplay controls muted loop playsinline width="100%">
+                  <source src="static/videos/comparison_3.mp4" type="video/mp4">
+                </video>
+                <p style="margin-top: 8px; font-size: 14px;">"Put the bowl on the plate"</p>
+              </div>
+              <div style="width: 2.5rem;"></div>
+              <div class="column is-one-third has-text-centered">
+                <video autoplay controls muted loop playsinline width="100%">
+                  <source src="static/videos/comparison_4.mp4" type="video/mp4">
+                </video>
+                <p style="margin-top: 8px; font-size: 14px;">"Put the white mug on the left plate and put the yellow and white mug on the right plate"</p>
+              </div>
+            </div>
+            <div class="columns is-centered" style="margin-top: -10px;">
+              <div class="column is-one-third has-text-centered">
+                <video autoplay controls muted loop playsinline width="100%">
+                  <source src="static/videos/comparison_7.mp4" type="video/mp4">
+                </video>
+                <p style="margin-top: 8px; font-size: 14px;">"Use the left arm to press the smooth metal bell's top center"</p>
+              </div>
+              <div style="width: 2.5rem;"></div>
+              <div class="column is-one-third has-text-centered">
+                <video autoplay controls muted loop playsinline width="100%">
+                  <source src="static/videos/comparison_8.mp4" type="video/mp4">
+                </video>
+                <p style="margin-top: 8px; font-size: 14px;">"Take hold of the microphone with cylindrical handle and hand it over"</p>
+              </div>
+            </div>
           </div>
         </div>
 
