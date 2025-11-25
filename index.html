@@ -414,7 +414,81 @@
           </div>
         </div>
 
-      </div>
+
+        <h3 class="title is-4" style="margin-top: 40px;">Visualization of Verbalized Reasoning</h3>
+        <div style="max-width: 60%; margin: 0 auto; text-align: justify; margin-top: -10px;">
+          <p class="has-text-centered has-text-justified">
+            The textual reasoning from the teacher model sometimes contains <span style="color: orange;">redundant sentences</span> and <span style="color: red;">incorrect content</span>, whereas the verbalized reasoning demonstrates a more compact and <span style="color: #76b900;">accurate</span> reasoning process.
+          </p>
+        </div>
+        <div class="container has-text-centered" style="margin-top: 15px;">
+          <div id="results-carousel" class="carousel results-carousel" style="margin-bottom: 20px;">
+            
+            <!-- Slide 1 -->
+            <div class="columns is-vcentered is-centered">
+              <!-- Left column: Video + QA -->
+              <div class="column is-4">
+                <video autoplay controls muted loop playsinline width="80%">
+                  <source src="static/videos/reasoning_robovqa.mp4" type="video/mp4">
+                </video>
+                <div class="content mt-4 has-text-justified">
+                  <p><strong>Question:</strong> Pick up the glass. Is it satisfied?
+                  </p>
+                  <p><strong>GT:</strong> yes</p>
+                </div>
+              </div>
+        
+              <!-- Right column: Reasoning -->
+              <div class="column is-5 has-text-justified">
+                <div class="box content" style="margin-bottom: 15px;">
+                  <p><strong>Textual reasoning (from teacher model)</strong></p>
+                  <p>Let me think about this. <span style="color: orange;">I can see a cluttered table with several objects scattered around.</span> The robot arm moves slowly toward the glass, adjusting its position to avoid bumping into nearby items. The gripper closes gently around the glass and <span style="color: #76b900;">lifts it from the table</span> with a steady motion. <span style="color: orange;">The glass is held securely and remains stable in the air.</span> Everything looks correct, so <span style="color: #76b900;">the action is satisfied</span>.</p>
+                </div>
+                <div class="box content">
+                  <p><strong>Verbalized reasoning</strong></p>
+                  <p>Let me think. The robot arm moves carefully over the table, <span style="color: #76b900;">aligns with the glass</span>, and <span style="color: #76b900;">grips it</span>. The glass lifts smoothly without tipping or slipping. It looks like the <span style="color: #76b900;">task is successful and satisfied</span>.</p>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Slide 2 -->
+            <div class="columns is-vcentered is-centered" style="margin-bottom: 20px;">
+              <!-- Left column -->
+              <div class="column is-4">
+                <video autoplay controls muted loop playsinline width="80%">
+                  <source src="static/videos/reasoning_openeqa.mp4" type="video/mp4">
+                </video>
+                <div class="content mt-4 has-text-justified">
+                  <p><strong>Question:</strong> Is this room on the ground floor of the building?
+                  </p>
+                  <p><strong>GT:</strong> no</p>
+                </div>
+              </div>
+        
+              <!-- Right column -->
+              <div class="column is-5 has-text-justified">
+                <div class="box content" style="margin-bottom: 15px;">
+                  <p><strong>Textual reasoning (from teacher model)</strong></p>
+                  <p>Let's carefully analyze the image to determine if this room is on the ground floor of the building.
+
+                    First, I notice that there is a window with a view of greenery outside. <span style="color: red;">This suggests we are at a level that allows natural light to filter in, which is typical for ground floor windows.</span>
+                    
+                    Next, I see a white desk and a chair, <span style="color: red;">which seem like standard office furniture for a ground floor workspace.</span> ... (ignore 67 words) ...
+                    
+                    Let's also consider the lighting. <span style="color: red;">The natural light coming through the window seems to be coming from the side, which is more likely if we are on the ground floor and looking towards a window that is part of the building's exterior.</span>
+                    
+                    Final thought: ... (ignore 11 words) ... it's reasonable to conclude that this room is on the ground floor.
+                    </p>
+                </div>
+                <div class="box content">
+                  <p><strong>Verbalized reasoning</strong></p>
+                  <p>Let's break this down. ... (ignore 40 words) ... I should also consider if there's any sign of elevation. Hmm, it seems like the <span style="color: #76b900;">view outside the window</span> shows that the room is <span style="color: #76b900;">positioned above the ground</span>. Oh, I see, the perspective through the window suggests <span style="color: #76b900;">it's not on the ground floor</span>. Let's confirm that. Yes, it checks out.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
   </div>
 </section>
 
